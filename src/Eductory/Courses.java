@@ -7,6 +7,7 @@ public class Courses implements Serializable {
 	private String name;
 	private int durationInWeeks;
 	private int fees;
+	
 	public Courses(String a , int b, int c) {
 		this.name=a;
 		this.durationInWeeks=b; 
@@ -32,7 +33,7 @@ public class Courses implements Serializable {
 	}
 	@Override
 	public String toString(){
-		return this.getName()+" "+this.getDurationInWeeks()+" "+this.getFees();
+		return"Course Name- "+this.getName()+", Course Duration In Weeks- "+this.getDurationInWeeks()+", Course Fees In Rupees "+this.getFees();
 	}
 	@Override 
 	public int hashCode() {
