@@ -1,6 +1,11 @@
 package Eductory;
 
-public class Students {
+import java.io.Serializable;
+import java.util.Comparator;
+import java.util.Objects;
+
+public class Students implements  Comparable<Students>, Serializable {
+	
 	private int  id=RandomIdGenerator.generateId();
 	private String fName;
 	private String lName;
@@ -8,7 +13,6 @@ public class Students {
 	private String address;
 	private long mobile;
 	private String password;
-	
 	public Students(String fName,String lName,String email,long mobile) {
 		this.fName=  fName;
 		this.lName= lName;
@@ -67,8 +71,25 @@ public class Students {
 	}
 	@Override
 	public String toString() {
-		return "Id:- "+this.id+"\nName:- "+this.fName+"\nLast Name:- "+this.lName+"\nEmail:- "+this.email+"Address:- "+this.address+"Mobile Number:- "+this.mobile;
+		return "{\n"
+				+ "Id:- "+this.id+"\nName:- "+this.fName+"\nLast Name:- "+this.lName+"\nEmail:- "+this.email+"\nMobile Number:- "+this.mobile+"\n}\n";
 	}
-	
+	public int hashCode() {
+		return Objects.hash(fName,lName,email,address, mobile, password);
+	}
+	public boolean equals(Students obj) {
+		if(this.getfName().equals(obj.getfName()) && this.getlName().equals(obj.getlName())&&this.getEmail().equals(obj.getEmail())&&this.getAddress().equals(obj.getAddress())) {
+			return true;
+		}
+		return false;
+	}
+	@Override
+	public int compareTo(Students o) {
+		// TODO Auto-generated method 
+		if(this.getEmail().equals(o.getEmail())&&this.getfName().equals(o.getfName()) && this.getlName().equals(o.getlName())) {
+			return -1;
+		}
+		return 1;
+	}
 	
 }

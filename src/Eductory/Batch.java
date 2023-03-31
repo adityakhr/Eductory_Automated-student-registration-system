@@ -1,23 +1,27 @@
 package Eductory;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.TreeSet;
 
-public class Batch {
+public class Batch implements Serializable  {
 	LocalDate startDate;
 	LocalDate endDate;
-	private ArrayList<Students> students;
+	private TreeSet<Students> students;
 	public Batch(LocalDate a , LocalDate b) {
 		this.startDate=a;
 		this.endDate=b;
-		this.students=new ArrayList<Students>();
+		this.students=new TreeSet<Students>();
 	}
-	public ArrayList<Students> getStudents() {
+	public TreeSet<Students> getStudents() {
 		return students;
 	}
-	@Override
+	@Override 
 	public String toString() {
-		return "Starting date:- "+startDate+"Ending date: "+endDate+"\nStudents-> "+this.students; 
+		return "{\n"
+				+"Starting date:- "+startDate+"\nEnding date: "+endDate+"\n[\nStudents-> "+this.students+"]"; 
 	}
 	
 }
