@@ -4,10 +4,9 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Courses implements Serializable {
-	private String name;
-	private int durationInWeeks;
-	private int fees;
-	
+	private String name="";
+	private int durationInWeeks=0;
+	private int fees=0;
 	public Courses(String a , int b, int c) {
 		this.name=a;
 		this.durationInWeeks=b; 
@@ -33,7 +32,8 @@ public class Courses implements Serializable {
 	}
 	@Override
 	public String toString(){
-		return"Course Name- "+this.getName()+", Course Duration In Weeks- "+this.getDurationInWeeks()+", Course Fees In Rupees "+this.getFees();
+		return"{\n"
+				+"Course Name- "+this.getName()+"\nCourse Duration In Weeks- "+this.getDurationInWeeks()+"\nCourse Fees In Rupees "+this.getFees()+"\n}\n";
 	}
 	@Override 
 	public int hashCode() {
