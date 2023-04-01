@@ -20,8 +20,7 @@ public class Batch implements Serializable  {
 	}
 	@Override 
 	public String toString() {
-		return "{\n"
-				+"Starting date:- "+startDate+"\nEnding date: "+endDate+"\n[\nStudents-> "+this.students+"]"; 
+		return "{\n"+"Starting date-: "+startDate+"\nEnding date-: "+endDate+"\nStudents-> "+this.students+"}\n"; 
 	}
 	
 }
