@@ -1,6 +1,8 @@
 package Eductory;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Courses implements Serializable {
@@ -30,10 +32,15 @@ public class Courses implements Serializable {
 	public void setFees(int fees) {
 		this.fees = fees;
 	}
+//	public HashMap<String, Batch> getBatches() {
+//		return batches;
+//	}
+//	public void setBatches(HashMap<String, Batch> batches) {
+//		this.batches = batches;
+//	}
 	@Override
 	public String toString(){
-		return"{\n"
-				+"Course Name- "+this.getName()+"\nCourse Duration In Weeks- "+this.getDurationInWeeks()+"\nCourse Fees In Rupees "+this.getFees()+"\n}\n";
+		return"{\n"+"Course Name-: "+this.getName()+"\nCourse Duration In Weeks-: "+this.getDurationInWeeks()+"\nCourse Fees In Rupees-: "+this.getFees()+"\n}\n";
 	}
 	@Override 
 	public int hashCode() {

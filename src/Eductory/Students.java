@@ -71,25 +71,25 @@ public class Students implements  Comparable<Students>, Serializable {
 	}
 	@Override
 	public String toString() {
-		return "{\n"
-				+ "Id:- "+this.id+"\nName:- "+this.fName+"\nLast Name:- "+this.lName+"\nEmail:- "+this.email+"\nMobile Number:- "+this.mobile+"\n}\n";
+		return "\n{\n"
+				+ "Id-: "+this.id+"\nName-: "+this.fName+"\nLast Name-: "+this.lName+"\nEmail-: "+this.email+"\nMobile Number-: "+this.mobile+"\n}\n";
 	}
-	public int hashCode() {
-		return Objects.hash(fName,lName,email,address, mobile, password);
-	}
-	public boolean equals(Students obj) {
-		if(this.getfName().equals(obj.getfName()) && this.getlName().equals(obj.getlName())&&this.getEmail().equals(obj.getEmail())&&this.getAddress().equals(obj.getAddress())) {
-			return true;
-		}
-		return false;
-	}
-	@Override
-	public int compareTo(Students o) {
-		// TODO Auto-generated method 
-		if(this.getEmail().equals(o.getEmail())&&this.getfName().equals(o.getfName()) && this.getlName().equals(o.getlName())) {
-			return -1;
-		}
-		return 1;
-	}
+//	public int hashCode() {
+//		return Objects.hash(fName,lName,email,address, mobile, password);
+//	}
+//	public boolean equals(Students obj) {
+//		if(this.getfName().equals(obj.getfName()) && this.getlName().equals(obj.getlName())&&this.getEmail().equals(obj.getEmail())&&this.getAddress().equals(obj.getAddress())) {
+//			return true;
+//		}
+//		return false;
+//	}
+//	@Override
+//	public int compareTo(Students o) {
+//		// TODO Auto-generated method 
+//		if(this.getEmail().equals(o.getEmail())&&this.getfName().equals(o.getfName()) && this.getlName().equals(o.getlName())) {
+//			return -1;
+//		}
+//		return 1;
+//	}
 	
 }
