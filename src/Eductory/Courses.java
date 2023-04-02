@@ -9,10 +9,12 @@ public class Courses implements Serializable {
 	private String name="";
 	private int durationInWeeks=0;
 	private int fees=0;
+	HashMap<String, Batch>batches;
 	public Courses(String a , int b, int c) {
 		this.name=a;
 		this.durationInWeeks=b; 
 		this.fees=c;
+		this.batches=new HashMap<String, Batch>();
 	}
 	public String getName() {
 		return name;
@@ -32,12 +34,12 @@ public class Courses implements Serializable {
 	public void setFees(int fees) {
 		this.fees = fees;
 	}
-//	public HashMap<String, Batch> getBatches() {
-//		return batches;
-//	}
-//	public void setBatches(HashMap<String, Batch> batches) {
-//		this.batches = batches;
-//	}
+	public HashMap<String, Batch> getBatches() {
+		return batches;
+	}
+	public void setBatches(HashMap<String, Batch> batches) {
+		this.batches = batches;
+	}
 	@Override
 	public String toString(){
 		return"{\n"+"Course Name-: "+this.getName()+"\nCourse Duration In Weeks-: "+this.getDurationInWeeks()+"\nCourse Fees In Rupees-: "+this.getFees()+"\n}\n";

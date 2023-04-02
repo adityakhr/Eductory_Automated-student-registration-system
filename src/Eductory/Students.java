@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Students implements  Comparable<Students>, Serializable {
+public class Students implements Serializable {
 	
 	private int  id=RandomIdGenerator.generateId();
 	private String fName;
@@ -72,7 +72,7 @@ public class Students implements  Comparable<Students>, Serializable {
 	@Override
 	public String toString() {
 		return "\n{\n"
-				+ "Id-: "+this.id+"\nName-: "+this.fName+"\nLast Name-: "+this.lName+"\nEmail-: "+this.email+"\nMobile Number-: "+this.mobile+"\n}\n";
+				+ "Id-: "+this.id+"\nName-: "+this.fName+"\nLast Name-: "+this.lName+"\nEmail-: "+this.email+"\nAddress-: "+this.address+"\nMobile Number-: "+this.mobile+"\n}\n";
 	}
 //	public int hashCode() {
 //		return Objects.hash(fName,lName,email,address, mobile, password);

@@ -42,35 +42,11 @@ public class FileExists {
 	
 	
 	
-	@SuppressWarnings("unchecked")
-	public static HashMap<String, Batch> batch(){
-		HashMap <String, Batch> ans=null;
-		File batchFile = new File("batch.ser");
-		boolean flag=false;
-		try {
-			if(!batchFile.exists()) {
-				batchFile.createNewFile();
-				flag=true;
-			}
-			if(flag) {
-				ans=new HashMap <>();
-				ObjectOutputStream op= new ObjectOutputStream(new FileOutputStream(batchFile));
-				op.writeObject(ans);
-				return ans;
-			}
-			else {
-				ObjectInputStream ip = new ObjectInputStream(new FileInputStream(batchFile));
-				ans = (HashMap<String, Batch>) ip.readObject();
-
-				return ans;
-			}
-			
-		}catch(Exception e) {
-			System.out.println(e.getMessage());
-		}
-		
-		return ans;
-	}
+	
+	
+	
+	
+	
 	@SuppressWarnings("unchecked")
 	public static ArrayList<Students> student() {
 		ArrayList<Students> ans=null;
