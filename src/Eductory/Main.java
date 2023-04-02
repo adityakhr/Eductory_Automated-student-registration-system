@@ -245,7 +245,7 @@ public class Main {
 					HashMap<String,Batch> batch=i.getValue().getBatches();
 					for(HashMap.Entry<String,Batch> j: batch.entrySet()) {
 						if(j.getKey().equals(nameOfBatch)) {
-							System.out.println(j.getValue());
+							System.out.println(j.getValue()+"\nAvailable seats-: "+(100-j.getValue().getStudents().size()));
 							++count;
 						}
 					}
@@ -832,7 +832,7 @@ public class Main {
 			Scanner sc = new Scanner (System.in);
 			String option ="";
 			do {
-				System.out.println("++++++++++++++++++++++++++++\nWelcom to Eductory Institute\n++++++++++++++++++++++++++++");
+				System.out.println("++++++++++++++++++++++\nWelcom to Eductory\n++++++++++++++++++++++\n");
 				System.out.println("\nPlease Select any option below:\n"
 						+ "1(Admin LogIn)\n"
 						+ "2(Student LogIn)\n"

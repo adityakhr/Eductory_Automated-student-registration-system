@@ -10,12 +10,22 @@ public class Batch implements Serializable  {
 	private LocalDate startDate;
 	private LocalDate endDate;
 	private ArrayList<Students> students;
+	private int seats;
 	public Batch(LocalDate a , LocalDate b) {
 		this.startDate=a;
 		this.endDate=b;
-		this.students=new ArrayList<Students>();
+		this.students=new ArrayList<Students>(100);
+		this.seats=100;
 	}
 	
+	public int getSeats() {
+		return seats;
+	}
+
+	public void setSeats(int seats) {
+		this.seats = seats;
+	}
+
 	public LocalDate getStartDate() {
 		return startDate;
 	}
