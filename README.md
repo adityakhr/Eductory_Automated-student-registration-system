@@ -11,9 +11,11 @@ Here in this project you can find above in src folder 4 class that I have made a
 2. Batch<br>
 3. Students<br>
 4. Main<br>
+5. Exception classes<br>
 As the names are indicating they are classes for generating the various objects first class is used to creating the course and it has the list of batch in it and also having name, duration and fees of course.<br>
 And the second class batch is used to create various batch under the perticular course and batch is having date of starting, date of ending and list of the students who are opting that perticular batch under the perticular course.<br>
 And the third class students is used to generate the student with different details of student like name, address, mobile number and all other required details.<br>
+Some exceptions classes are also there in folder which are used to throw a exception generated at runtime.<br> 
 Last class is Main class and having the main functionality of admin and a student, a admin and a student is having various functionality which are as follows:<br>
 <br>
 Admin Functionality.....
