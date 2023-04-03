@@ -1,6 +1,6 @@
 # better-death-6723
 Hello,<br>
-Welcome to the Automatic Students Registration System, I named it as "Eductory". You can find logo below of my Application.<br>
+Welcome to the Automated Students Registration System, I named it as "Eductory". You can find logo below of my Application.<br>
 
 
 <img src=logo/Eductory.png style="width:60%" >
