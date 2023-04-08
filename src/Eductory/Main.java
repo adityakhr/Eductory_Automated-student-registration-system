@@ -70,13 +70,13 @@ public class Main {
 					adminUpdateDetailsOfBatch(sc,courses);
 					break;
 				case "0" :
-					System.out.println("See you soon ADITYA\n========================\n");
+					System.out.println("See you soon Admin\n========================\n");
 					break;
 				case "" :
-					System.out.println("You Haven't chosen any option\n========================\n");
+					System.out.println("You Haven't chosen any option.");
 					break;
 				default:
-					System.out.println("Sorry wrong input\n========================\n");
+					System.out.println("Sorry wrong input.");
 				}
 			}while(!k.equals("0"));
 			
@@ -187,6 +187,7 @@ public class Main {
 							for(Students m: studs) {
 								if(m.getId()==id) {
 									++ae;
+									++count;
 									System.out.println("Already exists");
 								}
 							}
@@ -679,6 +680,8 @@ public class Main {
 				student.setPassword(newPass);
 				System.out.println("Password has changed.");
 			}
+		}else {
+			System.out.println("Current password is not valid.");
 		}
 	}
 	
@@ -793,10 +796,11 @@ public class Main {
 							if(j.getKey().equals(name)) {
 								ArrayList<Students> studs=j.getValue().getStudents();
 								int ae=0;
-								for(Students k: students) {
+								for(Students k: studs) {
 									if(k.getId()==s.getId()) {
 										++ae;
 										System.out.println("Already exists.");
+										++count;
 									}
 								}
 								if(ae==0) {
@@ -832,8 +836,8 @@ public class Main {
 			Scanner sc = new Scanner (System.in);
 			String option ="";
 			do {
-				System.out.println("++++++++++++++++++++++\nWelcom to Eductory\n++++++++++++++++++++++\n");
-				System.out.println("\nPlease Select any option below:\n"
+				System.out.println("\n+++++++++++++++++++++++\nWelcom to Eductory\n+++++++++++++++++++++++\n");
+				System.out.println("Please Select any option below:\n"
 						+ "1(Admin LogIn)\n"
 						+ "2(Student LogIn)\n"
 						+ "3(Student SignUp)\n"
