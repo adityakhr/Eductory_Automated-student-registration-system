@@ -1,4 +1,4 @@
-# better-death-6723
+# Eductory
 Hello,<br>
 Welcome to the Automated Students Registration System, I named it as "Eductory". You can find logo below of my Application.<br>
 
