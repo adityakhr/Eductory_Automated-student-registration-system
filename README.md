@@ -18,7 +18,7 @@ And the third class students is used to generate the student with different deta
 Some exceptions classes are also there in folder which are used to throw a exception generated at runtime.<br> 
 Last class is Main class and having the main functionality of admin and a student, a admin and a student is having various functionality which are as follows:<br>
 <br>
-Admin Functionality.....
+Admin Functionality.....( Username: admin || Password: admin )
   <br>
   <br>
   for using admin functionality you have to login as admin and I hard coded it so the credentials for admin are Username: admin, Password: admin (Case sensitive).<br>
