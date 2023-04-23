@@ -836,7 +836,7 @@ public class Main {
 			Scanner sc = new Scanner (System.in);
 			String option ="";
 			do {
-				System.out.println("\n+++++++++++++++++++++++\nWelcom to Eductory\n+++++++++++++++++++++++\n");
+				System.out.println("\n+++++++++++++++++++++++\nWelcome to Eductory\n+++++++++++++++++++++++\n");
 				System.out.println("Please Select any option below:\n"
 						+ "1(Admin LogIn)\n"
 						+ "2(Student LogIn)\n"
